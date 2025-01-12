@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ProjectsPage() {
   const projects = [
     {
@@ -23,7 +25,7 @@ export default function ProjectsPage() {
             key={index}
             className="grid grid-cols-12 gap-4 items-center bg-gray-900 text-slate-300 shadow-md hover:shadow-lg p-4 hover:bg-slate-800 rounded-[.3rem] cursor-pointer hover:outline hover:outline-[1px] hover:outline-slate-700"
           >
-            <img
+            <Image
               src={project.image}
               alt={project.title}
               className="col-span-4 lg:col-span-3 rounded"

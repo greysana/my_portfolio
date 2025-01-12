@@ -1,7 +1,6 @@
 import AboutPage from "@/components/About";
 import ExperiencePage from "@/components/Experience";
 import ProjectsPage from "@/components/Projects";
-import Image from "next/image";
 
 export default function Home() {
   return (
