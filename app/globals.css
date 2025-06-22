@@ -18,4 +18,105 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+}
+
+.b {
+  color: #ffbf00a2;
+}
+.glass1 {
+  background: linear-gradient(
+    140deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.035),
+    rgba(255, 255, 255, 0.11)
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+/* .glass1:hover{
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.096), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.034), rgba(255, 255, 255, 0.055),rgba(255, 255, 255, 0.11));
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  } */
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.075),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 255, 255, 0.112)
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+/* Container for perspective */
+.card-container {
+  perspective: 1000px; /* Enables 3D tilt effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+/* Card styling */
+.perspectiveCard {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  transition: transform 0.1s ease-out; /* Smooth transition for tilt */
+  transform-style: preserve-3d; /* Maintains 3D transforms */
+  will-change: transform; /* Optimizes for frequent transforms */
+}
+.circle {
+  width: 400px; /* Width of the circle */
+  height: 400px; /* Height of the circle */
+  border-radius: 50%; /* Makes it a perfect circle */
+
+  /* Gradient background */
+  background: linear-gradient(
+    45deg,
+    rgba(255, 238, 0, 0.514),
+    rgba(206, 203, 0, 0.575)
+  );
+
+  /* Shadow to create blur and spread effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Blur and spread */
+
+  /* Additional blur effect for the circle */
+  filter: blur(300px);
+}
+.circle1 {
+  width: 400px; /* Width of the circle */
+  height: 400px; /* Height of the circle */
+  border-radius: 50%; /* Makes it a perfect circle */
+
+  /* Gradient background */
+  background: linear-gradient(
+    45deg,
+    rgba(253, 253, 253, 0.314),
+    rgba(255, 255, 255, 0.375)
+  );
+
+  /* Shadow to create blur and spread effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Blur and spread */
+
+  /* Additional blur effect for the circle */
+  filter: blur(300px);
 }

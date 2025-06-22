@@ -10,13 +10,16 @@ module.exports = {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primarycol: "#ffd500",
+        primarycol: "#DAA520",
+        secondarycol: "#F4C430",
+        gold: "#FFBF00",
+        goldSlate:"#ffbf00a2",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
         primaryDarker: "#362d00",
-        primaryDarkerOrange: "#e4c111",
+        primaryDarkerOrange: "#CC5500",
 
         card: {
           DEFAULT: "hsl(var(--card))",

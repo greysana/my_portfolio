@@ -110,11 +110,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <title>Mark Anthony Hipe Portfolio</title>
+        {/* <link
+          rel="icon"
+          href="path-to-your-icon/favicon.ico"
+          type="image/x-icon"
+        />
+
+        <link
+          rel="icon"
+          href="path-to-your-icon/favicon.png"
+          type="image/png"
+        /> */}
+      </head>
+
+      <body className={`${poppins.variable} antialiased`}>{children}</body>
     </html>
   );
 }
