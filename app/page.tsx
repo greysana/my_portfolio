@@ -11,6 +11,7 @@ import {
   FaExternalLinkAlt,
   FaChevronDown,
   FaChevronUp,
+  FaCode,
 } from "react-icons/fa";
 import project1 from "../assets/obnecom.png";
 import project2 from "../assets/gis.jpg";
@@ -669,6 +670,10 @@ export default function Portfolio() {
 
                 {/* Skills Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                  <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
+                    {" "}
+                    <FaCode className="text-yellow-400" /> Technical Skills{" "}
+                  </h3>
                   {skills.map((skill, idx) => {
                     const Icon = skill.Icon;
                     return (
@@ -679,18 +684,17 @@ export default function Portfolio() {
                           {
                             animationDelay: `${idx * 50}ms`,
                             animation: "fade-in-up 0.5s ease-out forwards",
-                            // set the CSS var for this card (TypeScript assert)
                             "--brand-color": skill.brandColor,
                           } as React.CSSProperties
                         }
                       >
                         {/* Background glow — make sure skill.gradient is a valid CSS gradient stops string like: "#61DAFB, #0EA5A4" */}
                         <div
-                          className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
-                          style={{
-                            background: `linear-gradient(135deg, ${skill.gradient})`,
-                            filter: "blur(20px)",
-                          }}
+                          className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 bg-gradient-to-br ${skill.gradient}`}
+                          // style={{
+                          //   background: `linear-gradient(135deg, ${skill.gradient})`,
+                          //   filter: "blur(20px)",
+                          // }}
                         />
 
                         <div className="relative flex items-center gap-3">
