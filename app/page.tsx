@@ -978,7 +978,64 @@ export default function Portfolio() {
               </div>
             </div>
           </section>
+          <section
+            id="details"
+            className=" hidden md:flex sm:flex justify-center items-center p-3 sm:p-5 "
+          >
+            <div
+              className={`space-y-4 transition-all duration-700 delay-300 flex flex-col justify-center items-center ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+            >
+              <a
+                href="api/uploads/Mark_Anthony_Hipe_Resume.pdf"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-yellow-500/50 text-white font-medium group"
+              >
+                <svg
+                  className="w-5 h-5 group-hover:animate-bounce"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Download Resume
+              </a>
 
+              {/* Social Links */}
+              <div className="flex gap-3">
+                {socialLinks.map((link) => {
+                  const IconComponent = link.icon;
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      className="w-12 h-12 flex items-center justify-center bg-gray-800 rounded-xl hover:bg-gradient-to-br hover:from-yellow-500 hover:to-orange-500 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg group"
+                      aria-label={link.label}
+                    >
+                      <IconComponent className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
+                    </a>
+                  );
+                })}
+              </div>
+
+              {/* Status */}
+              <div className="flex items-center gap-2 text-sm text-gray-400">
+                <div className="relative">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <div className="absolute inset-0 w-2 h-2 bg-green-500 rounded-full animate-ping"></div>
+                </div>
+                <span>Available for opportunities</span>
+              </div>
+            </div>
+          </section>
           {/* Footer */}
           <footer className="p-6 sm:p-8 lg:p-12 text-center border-t border-gray-800">
             <div className="max-w-4xl mx-auto space-y-4">
