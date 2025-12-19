@@ -57,7 +57,6 @@ export default function ProjectsPage() {
 
   const [expandedCards, setExpandedCards] = useState<Record<number, boolean>>(
     () => {
-      // Initialize all cards as collapsed by default
       const initialState: Record<number, boolean> = {};
       projects.forEach((_, index) => {
         initialState[index] = false;

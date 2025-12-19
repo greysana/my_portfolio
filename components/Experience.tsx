@@ -29,7 +29,6 @@ export default function ExperiencePage() {
   ];
 
   const [expandedCards, setExpandedCards] = useState<Record<number, boolean>>(() => {
-    // Initialize all cards as expanded by default
     const initialState: Record<number, boolean> = {};
     experiences.forEach((_, index) => {
       initialState[index] = true;
@@ -59,7 +58,7 @@ export default function ExperiencePage() {
           >
             <span className="absolute -left-[3.55rem] top-1/2 transform -translate-y-1/2 h-4 w-4 rounded-full outline outline-[2px] outline-primarycol bg-[#9e7817] shadow-xl"></span>
             
-            {/* Header - Always visible */}
+            {/* Header  */}
             <div 
               className="grid grid-cols-12 gap-4 p-4 cursor-pointer"
               onClick={() => toggleCard(index)}
@@ -115,7 +114,7 @@ export default function ExperiencePage() {
 
       <div className="text-center mt-8">
         <a
-          href="api/uploads/Mark_Anthony_Hipe_Resume.pdf"
+          href="api/uploads/my.pdf"
           className="inline-flex items-center px-6 py-3 text-primarycol hover:text-gray-300 font-medium transition-colors duration-200 border border-primarycol hover:border-gray-300 rounded-lg hover:bg-primarycol hover:bg-opacity-10"
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

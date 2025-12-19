@@ -29,7 +29,6 @@ export default function AboutPage() {
 
       <div className="space-y-6 mb-4 mx-3">
         
-        {/* About Me Card */}
         <div className="perspectiveCard glass1 relative bg-gray-900 opacity-90 hover:opacity-100 text-slate-300 shadow-md hover:shadow-lg rounded-[.3rem] outline-yellow-700 outline-[1px] hover:outline hover:outline-[2px] hover:outline-yellow-600 transition-all duration-300">
           
           <div className="p-6">

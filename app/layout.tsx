@@ -111,7 +111,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Mark Anthony Hipe Portfolio</title>
+        <title>My Portfolio</title>
         {/* <link
           rel="icon"
           href="path-to-your-icon/favicon.ico"
