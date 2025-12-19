@@ -8,7 +8,6 @@ import {
   FaUser,
   FaBriefcase,
   FaProjectDiagram,
-  FaCode,
   FaExternalLinkAlt,
   FaChevronDown,
   FaChevronUp,
@@ -19,6 +18,28 @@ import project3 from "../assets/call_card.png";
 import project4 from "../assets/ecom.png";
 import project5 from "../assets/rag.png";
 import project6 from "../assets/qms.png";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiMongodb,
+  SiPython,
+  SiDocker,
+  SiTypescript,
+  SiTailwindcss,
+  SiPostgresql,
+  SiPostman,
+  SiOdoo,
+} from "react-icons/si";
+import { IoLogoReact } from "react-icons/io5";
+type Skill = {
+  name: string;
+  category: string;
+  Icon: React.ComponentType<{ className?: string }>;
+  gradient: string;
+  brandColor: string;
+};
+
 // Type definitions
 interface NavigationItem {
   href: string;
@@ -82,66 +103,92 @@ export default function Portfolio() {
     ],
     []
   );
-
-  const skills = [
+  const skills: Skill[] = [
     {
       name: "React JS/TS",
       category: "Frontend",
-      color: "from-blue-500 to-cyan-500",
+      Icon: SiReact,
+      gradient: "from-cyan-400 to-blue-500",
+      brandColor: "#61DAFB",
     },
     {
       name: "Next.js",
       category: "Frontend",
-      color: "from-gray-700 to-gray-900",
+      Icon: SiNextdotjs,
+      gradient: "from-gray-700 to-gray-900",
+      brandColor: "#ffffff",
     },
     {
       name: "React Native",
       category: "Mobile",
-      color: "from-purple-500 to-pink-500",
+      Icon: IoLogoReact,
+      gradient: "from-purple-500 to-pink-500",
+      brandColor: "#61DAFB",
     },
     {
       name: "Node.js",
       category: "Backend",
-      color: "from-green-500 to-emerald-600",
-    },
-    {
-      name: "Odoo ERP",
-      category: "ERP",
-      color: "from-purple-600 to-indigo-600",
+      Icon: SiNodedotjs,
+      gradient: "from-green-500 to-emerald-600",
+      brandColor: "#68A063",
     },
     {
       name: "MongoDB",
       category: "Database",
-      color: "from-green-600 to-lime-600",
+      Icon: SiMongodb,
+      gradient: "from-green-600 to-lime-600",
+      brandColor: "#4DB33D",
     },
     {
       name: "Python",
       category: "Backend",
-      color: "from-yellow-500 to-blue-500",
+      Icon: SiPython,
+      gradient: "from-yellow-500 to-blue-500",
+      brandColor: "#3776AB",
     },
-    { name: "Docker", category: "DevOps", color: "from-blue-400 to-blue-600" },
+    {
+      name: "Docker",
+      category: "DevOps",
+      Icon: SiDocker,
+      gradient: "from-blue-400 to-blue-600",
+      brandColor: "#1D63ED",
+    },
     {
       name: "TypeScript",
       category: "Language",
-      color: "from-blue-600 to-indigo-600",
+      Icon: SiTypescript,
+      gradient: "from-blue-600 to-indigo-600",
+      brandColor: "#3178C6",
     },
     {
       name: "Tailwind CSS",
       category: "Styling",
-      color: "from-cyan-400 to-blue-500",
+      Icon: SiTailwindcss,
+      gradient: "from-cyan-400 to-blue-500",
+      brandColor: "#06B6D4",
     },
     {
       name: "PostgreSQL",
       category: "Database",
-      color: "from-blue-500 to-indigo-600",
+      Icon: SiPostgresql,
+      gradient: "from-blue-500 to-indigo-600",
+      brandColor: "#336791",
     },
     {
       name: "REST APIs",
       category: "Integration",
-      color: "from-orange-500 to-red-500",
+      Icon: SiPostman,
+      gradient: "from-orange-500 to-red-500",
+      brandColor: "#FF6C37",
+    },
+    {
+      name: "Odoo ERP",
+      category: "ERP",
+      gradient: "from-purple-600 to-indigo-600",
+      Icon: SiOdoo,
+      brandColor: "#714B67",
     },
   ];
-
   const experiences = [
     {
       date: "2022 - Present",
@@ -184,7 +231,7 @@ export default function Portfolio() {
       icon: "💳",
       gradient: "from-purple-500 to-pink-500",
       link: "",
-      image: project1
+      image: project1,
     },
     {
       title: "RAG Knowledge Assistant",
@@ -196,8 +243,7 @@ export default function Portfolio() {
       icon: "🤖",
       gradient: "from-blue-500 to-cyan-500",
       link: "",
-      image: project5
-
+      image: project5,
     },
     {
       title: "GIS Property Mapping Platform",
@@ -209,8 +255,7 @@ export default function Portfolio() {
       icon: "🗺️",
       gradient: "from-green-500 to-emerald-500",
       link: "",
-      image: project2
-
+      image: project2,
     },
     {
       title: "Digital Calling Card Platform",
@@ -222,8 +267,7 @@ export default function Portfolio() {
       icon: "📇",
       gradient: "from-yellow-500 to-orange-500",
       link: "",
-      image: project3
-
+      image: project3,
     },
     {
       title: "Quality Management System",
@@ -235,8 +279,7 @@ export default function Portfolio() {
       icon: "✅",
       gradient: "from-indigo-500 to-purple-500",
       link: "",
-      image: project6
-
+      image: project6,
     },
     {
       title: "E-commerce Mobile App",
@@ -248,8 +291,7 @@ export default function Portfolio() {
       icon: "🛍️",
       gradient: "from-red-500 to-pink-500",
       link: "",
-      image: project4
-
+      image: project4,
     },
   ];
 
@@ -626,38 +668,52 @@ export default function Portfolio() {
                 </div>
 
                 {/* Skills Grid */}
-                <div className="bg-gray-800/50 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-gray-700/50">
-                  <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                    <FaCode className="text-yellow-400" />
-                    Technical Skills
-                  </h3>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                    {skills.map((skill, index) => (
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                  {skills.map((skill, idx) => {
+                    const Icon = skill.Icon;
+                    return (
                       <div
                         key={skill.name}
                         className="group relative overflow-hidden p-4 bg-gray-900/50 rounded-xl border border-gray-700/50 hover:border-transparent transition-all duration-300 hover:scale-105 cursor-default"
-                        style={{
-                          animationDelay: `${index * 50}ms`,
-                          animation: "fade-in-up 0.5s ease-out forwards",
-                        }}
+                        style={
+                          {
+                            animationDelay: `${idx * 50}ms`,
+                            animation: "fade-in-up 0.5s ease-out forwards",
+                            // set the CSS var for this card (TypeScript assert)
+                            "--brand-color": skill.brandColor,
+                          } as React.CSSProperties
+                        }
                       >
+                        {/* Background glow — make sure skill.gradient is a valid CSS gradient stops string like: "#61DAFB, #0EA5A4" */}
                         <div
-                          className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
-                        ></div>
-                        <div
-                          className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-5 blur-xl transition-opacity duration-300`}
-                        ></div>
-                        <div className="relative">
-                          <div className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors mb-1">
-                            {skill.name}
+                          className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+                          style={{
+                            background: `linear-gradient(135deg, ${skill.gradient})`,
+                            filter: "blur(20px)",
+                          }}
+                        />
+
+                        <div className="relative flex items-center gap-3">
+                          <div className="p-2 rounded-md bg-white/5">
+                            <Icon
+                              // default gray; on hover use the CSS var (static Tailwind class)
+                              className="w-6 h-6 text-gray-400 transition-colors duration-300 group-hover:text-[var(--brand-color)]"
+                              aria-hidden
+                            />
                           </div>
-                          <div className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
-                            {skill.category}
+
+                          <div>
+                            <div className="text-sm font-medium text-gray-300 group-hover:text-[var(--brand-color)] transition-colors mb-1">
+                              {skill.name}
+                            </div>
+                            <div className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+                              {skill.category}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    ))}
-                  </div>
+                    );
+                  })}
                 </div>
 
                 {/* Key Strengths */}
