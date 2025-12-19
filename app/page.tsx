@@ -980,7 +980,7 @@ export default function Portfolio() {
           </section>
           <section
             id="details"
-            className=" hidden md:flex sm:flex justify-center items-center p-3 sm:p-5 "
+            className="lg:hidden xl:hidden md:flex sm:flex hidden justify-center items-center p-3 sm:p-5 "
           >
             <div
               className={`space-y-4 transition-all duration-700 delay-300 flex flex-col justify-center items-center ${
