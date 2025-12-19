@@ -669,57 +669,58 @@ export default function Portfolio() {
                 </div>
 
                 {/* Skills Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                <div className="bg-gray-800/50 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-gray-700/50">
                   <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
                     {" "}
                     <FaCode className="text-yellow-400" /> Technical Skills{" "}
                   </h3>
-                  {skills.map((skill, idx) => {
-                    const Icon = skill.Icon;
-                    return (
-                      <div
-                        key={skill.name}
-                        className="group relative overflow-hidden p-4 bg-gray-900/50 rounded-xl border border-gray-700/50 hover:border-transparent transition-all duration-300 hover:scale-105 cursor-default"
-                        style={
-                          {
-                            animationDelay: `${idx * 50}ms`,
-                            animation: "fade-in-up 0.5s ease-out forwards",
-                            "--brand-color": skill.brandColor,
-                          } as React.CSSProperties
-                        }
-                      >
-                        {/* Background glow — make sure skill.gradient is a valid CSS gradient stops string like: "#61DAFB, #0EA5A4" */}
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                    {skills.map((skill, idx) => {
+                      const Icon = skill.Icon;
+                      return (
                         <div
-                          className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 bg-gradient-to-br ${skill.gradient}`}
-                          // style={{
-                          //   background: `linear-gradient(135deg, ${skill.gradient})`,
-                          //   filter: "blur(20px)",
-                          // }}
-                        />
+                          key={skill.name}
+                          className="group relative overflow-hidden p-4 bg-gray-900/50 rounded-xl border border-gray-700/50 hover:border-transparent transition-all duration-300 hover:scale-105 cursor-default"
+                          style={
+                            {
+                              animationDelay: `${idx * 50}ms`,
+                              animation: "fade-in-up 0.5s ease-out forwards",
+                              "--brand-color": skill.brandColor,
+                            } as React.CSSProperties
+                          }
+                        >
+                          {/* Background glow — make sure skill.gradient is a valid CSS gradient stops string like: "#61DAFB, #0EA5A4" */}
+                          <div
+                            className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 bg-gradient-to-br ${skill.gradient}`}
+                            // style={{
+                            //   background: `linear-gradient(135deg, ${skill.gradient})`,
+                            //   filter: "blur(20px)",
+                            // }}
+                          />
 
-                        <div className="relative flex items-center gap-3">
-                          <div className="p-2 rounded-md bg-white/5">
-                            <Icon
-                              // default gray; on hover use the CSS var (static Tailwind class)
-                              className="w-6 h-6 text-gray-400 transition-colors duration-300 group-hover:text-[var(--brand-color)]"
-                              aria-hidden
-                            />
-                          </div>
-
-                          <div>
-                            <div className="text-sm font-medium text-gray-300 group-hover:text-[var(--brand-color)] transition-colors mb-1">
-                              {skill.name}
+                          <div className="relative flex items-center gap-3">
+                            <div className="p-2 rounded-md bg-white/5">
+                              <Icon
+                                // default gray; on hover use the CSS var (static Tailwind class)
+                                className="w-6 h-6 text-gray-400 transition-colors duration-300 group-hover:text-[var(--brand-color)]"
+                                aria-hidden
+                              />
                             </div>
-                            <div className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
-                              {skill.category}
+
+                            <div>
+                              <div className="text-sm font-medium text-gray-300 group-hover:text-[var(--brand-color)] transition-colors mb-1">
+                                {skill.name}
+                              </div>
+                              <div className="text-xs text-gray-500 group-hover:text-gray-400 transition-colors">
+                                {skill.category}
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
                 </div>
-
                 {/* Key Strengths */}
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
