@@ -548,7 +548,7 @@ export default function Portfolio() {
             }`}
           >
             <a
-              href="/Mark_Anthony_Hipe_Resume.pdf"
+              href="api/uploads/Mark_Anthony_Hipe_Resume.pdf"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-yellow-500/50 text-white font-medium group"
             >
               <svg
