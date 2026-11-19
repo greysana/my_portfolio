@@ -1,0 +1,567 @@
+{
+  "_readme": "Edit this file to update the whole site. Projects with a \"details\" object get their own page at /projects/<slug>; projects without one just show an expandable description. Tech names in \"tags\" and \"skills\" are looked up in \"tech\" for their icon and color. The build fails with a clear message if something here is invalid.",
+  "site": {
+    "title": "Mark Anthony Hipe | Full Stack Developer",
+    "shortTitle": "Mark Anthony Hipe",
+    "description": "Full stack developer building web, mobile, and Odoo ERP software, from document control systems to AI assistants."
+  },
+  "profile": {
+    "name": "Mark Anthony Hipe",
+    "initials": "MH",
+    "role": "Full Stack Developer",
+    "summary": "I build web, mobile, and ERP systems for private and government clients, from document control platforms to AI assistants. Mostly TypeScript, React, Laravel, Python, and Odoo.",
+    "stackHighlights": ["React", "TypeScript", "Laravel", "Python", "Odoo"],
+    "availability": {
+      "open": true,
+      "label": "Available for opportunities"
+    },
+    "resumeLabel": "Download resume",
+    "email": "hipemarkanthony@gmail.com",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/greysana"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mark-anthony-hipe-28a34911a"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:hipemarkanthony@gmail.com"
+      }
+    ]
+  },
+  "about": {
+    "heading": "About",
+    "paragraphs": [
+      "I’m a full stack developer, building web, mobile, and ERP software for private and government clients. The work spans document management, quality management, audit, and project management systems, plus the occasional AI assistant.",
+      "I care about code that stays easy to change. Shared base modules and reusable components mean a fix lands in one place, and that approach cut module development time by about half on my team.",
+      "Beyond the code, I sit in on requirements gathering, UAT, client training, and go-live, and I guide interns through our development workflow."
+    ],
+    "skillsHeading": "Skills",
+    "strengthsHeading": "How I work",
+    "strengths": [
+      "Reusable architecture: shared base modules, one place to fix things",
+      "Tested and containerized: Jest, Playwright, Pest, and Docker",
+      "Hands-on with clients, from requirements to go-live",
+      "AI where it helps",
+      "Mentoring interns on development workflow"
+    ]
+  },
+  "skills": [
+    {
+      "name": "TypeScript",
+      "category": "Language"
+    },
+    {
+      "name": "JavaScript",
+      "category": "Language"
+    },
+    {
+      "name": "Python",
+      "category": "Language"
+    },
+    {
+      "name": "PHP",
+      "category": "Language"
+    },
+    {
+      "name": "React",
+      "category": "Frontend"
+    },
+    {
+      "name": "Next.js",
+      "category": "Frontend"
+    },
+    {
+      "name": "React Native",
+      "category": "Mobile"
+    },
+    {
+      "name": "Inertia.js",
+      "category": "Frontend"
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Styling"
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend"
+    },
+    {
+      "name": "FastAPI",
+      "category": "Backend"
+    },
+    {
+      "name": "Laravel",
+      "category": "Backend"
+    },
+    {
+      "name": "Odoo ERP",
+      "category": "ERP"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Database"
+    },
+    {
+      "name": "MySQL",
+      "category": "Database"
+    },
+    {
+      "name": "MongoDB",
+      "category": "Database"
+    },
+    {
+      "name": "Redis",
+      "category": "Database"
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps"
+    },
+    {
+      "name": "Git",
+      "category": "Tooling"
+    },
+    {
+      "name": "Jest",
+      "category": "Testing"
+    },
+    {
+      "name": "Playwright",
+      "category": "Testing"
+    },
+    {
+      "name": "Pest",
+      "category": "Testing"
+    },
+    {
+      "name": "Ollama",
+      "category": "AI / RAG"
+    },
+    {
+      "name": "Figma",
+      "category": "Design"
+    }
+  ],
+  "tech": {
+    "React": {
+      "icon": "react"
+    },
+    "React JS": {
+      "icon": "react"
+    },
+    "React JS/TS": {
+      "icon": "react"
+    },
+    "React Native": {
+      "icon": "react"
+    },
+    "Next.js": {
+      "icon": "nextdotjs"
+    },
+    "Inertia.js": {
+      "icon": "inertia"
+    },
+    "TanStack Query": {
+      "icon": "reactquery"
+    },
+    "Tailwind": {
+      "icon": "tailwindcss"
+    },
+    "Tailwind CSS": {
+      "icon": "tailwindcss"
+    },
+    "TypeScript": {
+      "icon": "typescript"
+    },
+    "JavaScript": {
+      "icon": "javascript"
+    },
+    "Python": {
+      "icon": "python"
+    },
+    "PHP": {
+      "icon": "php"
+    },
+    "Node.js": {
+      "icon": "nodedotjs"
+    },
+    "FastAPI": {
+      "icon": "fastapi"
+    },
+    "Laravel": {
+      "icon": "laravel"
+    },
+    "Odoo": {
+      "icon": "odoo"
+    },
+    "Odoo ERP": {
+      "icon": "odoo"
+    },
+    "PostgreSQL": {
+      "icon": "postgresql"
+    },
+    "MySQL": {
+      "icon": "mysql"
+    },
+    "MongoDB": {
+      "icon": "mongodb"
+    },
+    "Redis": {
+      "icon": "redis"
+    },
+    "Docker": {
+      "icon": "docker"
+    },
+    "Git": {
+      "icon": "git"
+    },
+    "Jest": {
+      "icon": "jest"
+    },
+    "Playwright": {
+      "color": "#2EAD33"
+    },
+    "Pest": {},
+    "Ollama": {
+      "icon": "ollama"
+    },
+    "Figma": {
+      "icon": "figma"
+    },
+    "LangChain": {
+      "icon": "langchain"
+    },
+    "Leaflet": {
+      "icon": "leaflet"
+    },
+    "Expo": {
+      "icon": "expo"
+    }
+  },
+  "experience": {
+    "heading": "Experience",
+    "items": [
+      {
+        "role": "Web Developer",
+        "company": "OBANANA Corp.",
+        "period": "2022 – Present",
+        "defaultOpen": true,
+        "summary": "Full stack web, mobile, and ERP delivery for private and government clients across several business domains, including document management, quality management, audit, and project management systems.",
+        "highlights": [
+          "Build web apps with Next.js, React, and TypeScript on Node.js, FastAPI, and Laravel back ends, in monolithic and modular monolithic setups",
+          "Ship cross-platform mobile apps with React Native (Expo), wired to REST APIs and backend services",
+          "Create shared base modules and reusable components that cut module development time by roughly 50% and make fixes a single-point change",
+          "Customize Odoo modules (Sales, HR, E-commerce) and helped migrate from Odoo 16 to 19",
+          "Build RAG assistants on local LLMs (Ollama) and vector databases for internal documentation search",
+          "Keep releases steady with Jest, Playwright, and Pest tests plus Docker environments",
+          "Take part in requirements gathering, UAT, client training, and go-live"
+        ],
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "FastAPI",
+          "Laravel",
+          "Odoo",
+          "Docker"
+        ]
+      },
+      {
+        "role": "Web Developer Intern (OJT)",
+        "company": "OBANANA Corp.",
+        "period": "2022",
+        "defaultOpen": false,
+        "summary": "Worked alongside senior developers across the full development lifecycle of web applications.",
+        "highlights": [
+          "Delivered features for internal projects, improving UI/UX and backend logic",
+          "Found and fixed bugs during testing to support clean releases"
+        ],
+        "tags": ["Laravel", "PHP", "React"]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "allHeading": "All projects",
+    "allIntro": "Every project in one place. Projects with a details page open it when you click them.",
+    "viewAllLabel": "View all projects",
+    "filters": ["Web", "Mobile", "ERP", "AI"],
+    "items": [
+      {
+        "slug": "dms",
+        "title": "Document Management System",
+        "subtitle": "Secure registry with approvals",
+        "categories": ["Web"],
+        "image": {
+          "src": "/images/projects/dms.webp",
+          "alt": "Screenshot of the Document Management System",
+          "width": 1600,
+          "height": 1000
+        },
+        "tags": [
+          "Laravel",
+          "React",
+          "Inertia.js",
+          "TanStack Query",
+          "TypeScript"
+        ],
+        "summary": "A document registry for teams that need to know who can see what, which version is current, and who signed off.",
+        "details": {
+          "overview": "Built with Laravel 12, React 19, Inertia.js, and TanStack Query. Documents live in a folder tree with two layers of access control: role permissions plus per-resource ACLs with five levels, from Viewer to Owner. Permissions inherit down the tree, with per-document overrides and hard-deny rules.",
+          "features": [
+            "Folder tree with role permissions and five-level ACLs",
+            "Recursive permission inheritance, per-document overrides, and hard-deny rules",
+            "Version control with lifecycle states and a 4-level approval workflow",
+            "Electronic signatures, plus a checkout system that prevents conflicting edits",
+            "Share links with audience enforcement and password protection",
+            "Batch import with ZIP support, hardened against malicious uploads",
+            "Cross-module document linking",
+            "Subscriptions, read acknowledgments, periodic review tracking, favorites, tags, and full-text search",
+            "Scheduled jobs for expiry reminders and retention cleanup"
+          ]
+        }
+      },
+      {
+        "slug": "qms-document-control",
+        "title": "QMS Document Control",
+        "subtitle": "Compliance layer on top of the DMS",
+        "categories": ["Web"],
+        "image": {
+          "src": "/images/projects/qms-document-control.webp",
+          "alt": "Screenshot of the QMS Document Control module",
+          "width": 1600,
+          "height": 1000
+        },
+        "tags": [
+          "Laravel",
+          "React",
+          "Inertia.js",
+          "TanStack Query",
+          "TypeScript"
+        ],
+        "summary": "A compliance layer on the DMS that keeps document codes, classifications, and approvals consistent across departments.",
+        "details": {
+          "overview": "Built on the DMS with the same stack (Laravel 12, React 19, Inertia.js, TanStack Query, TypeScript). It adds the controls auditors ask about: generated document codes, locked classifications, department-scoped visibility, and approval chains with signatures.",
+          "features": [
+            "Auto-generated document codes by department, division, section, and type",
+            "Classification locked permanently, enforced at four independent layers",
+            "Three visibility tiers (Full, Department, Authored) applied across queries, policies, and reports",
+            "Department-scoped change request approval, separate from global approval rights",
+            "Multi-step approvals with per-step e-signature requirements"
+          ],
+          "flow": [
+            {
+              "title": "Submit",
+              "text": "A document or change request enters the approval chain."
+            },
+            {
+              "title": "Approve step by step",
+              "text": "Each step can require its own electronic signature."
+            },
+            {
+              "title": "Automatic updates",
+              "text": "Approval records revision history and activates the DMS version."
+            },
+            {
+              "title": "Follow-through",
+              "text": "Reviews are scheduled and distribution notifications go out."
+            }
+          ]
+        }
+      },
+      {
+        "slug": "rag-assistant",
+        "title": "RAG Knowledge Assistant",
+        "subtitle": "AI document search inside Odoo",
+        "categories": ["AI", "ERP"],
+        "image": {
+          "src": "/images/projects/rag-assistant.webp",
+          "alt": "Screenshot of the RAG Knowledge Assistant",
+          "width": 1536,
+          "height": 1024
+        },
+        "tags": ["Python", "FastAPI", "LangChain", "Ollama"],
+        "summary": "A RAG assistant that turns company PDFs into searchable knowledge, answering questions in chat with context from your own documents.",
+        "details": {
+          "overview": "Converts company PDFs into vector embeddings for context-aware semantic search, running on a local Ollama LLM. REST endpoints handle document ingestion and querying, so staff can ask questions in plain language from inside the systems they already use, including Odoo Discuss.",
+          "features": [
+            "Turns PDFs into vector embeddings with LangChain",
+            "Runs on a local Ollama LLM",
+            "Scalable REST endpoints for document ingestion and querying",
+            "Chat-based retrieval inside Odoo Discuss",
+            "Instant answers from manuals, policies, and procedures"
+          ],
+          "flow": [
+            {
+              "title": "Ingest",
+              "text": "PDFs go in through the ingestion endpoint."
+            },
+            {
+              "title": "Embed",
+              "text": "LangChain turns the content into vector embeddings."
+            },
+            {
+              "title": "Retrieve",
+              "text": "A question asked in Odoo Discuss queries the service."
+            },
+            {
+              "title": "Answer",
+              "text": "The Ollama LLM replies using context from company documents."
+            }
+          ]
+        }
+      },
+      {
+        "slug": "facial-attendance",
+        "title": "Facial Recognition Attendance",
+        "subtitle": "Mobile check-ins with face verification",
+        "categories": ["Mobile", "AI"],
+        "image": {
+          "src": "/images/projects/facial-attendance.webp",
+          "alt": "Screenshot of the Facial Recognition Attendance app",
+          "width": 1600,
+          "height": 1000
+        },
+        "tags": ["React Native", "Python", "FastAPI", "PostgreSQL", "Redis"],
+        "summary": "A mobile attendance app that verifies who is checking in, and where, against the central employee database.",
+        "details": {
+          "overview": "A React Native (Expo) app talks to a FastAPI recognition service backed by PostgreSQL and Redis. The backend verifies identities with anti-spoofing checks and stays responsive when many biometric requests arrive at once.",
+          "features": [
+            "Secure photo capture and GPS-verified check-ins",
+            "Enrollment tracking",
+            "Face recognition with anti-spoofing and identity verification",
+            "Redis-backed rate limiting and background jobs for high concurrency",
+            "Attendance logs synced automatically with HR systems",
+            "Admin dashboards for device management and audit trails"
+          ],
+          "flow": [
+            {
+              "title": "Capture",
+              "text": "The employee takes a photo and the app attaches their GPS location."
+            },
+            {
+              "title": "Verify",
+              "text": "FastAPI checks for spoofing and matches the face against the employee database."
+            },
+            {
+              "title": "Record",
+              "text": "The check-in is logged with its location."
+            },
+            {
+              "title": "Sync",
+              "text": "Attendance logs flow to the HR system automatically."
+            }
+          ]
+        }
+      },
+      {
+        "slug": "gis-mapping",
+        "title": "GIS Property Mapping Platform",
+        "subtitle": "Interactive property map",
+        "categories": ["Web", "ERP"],
+        "image": {
+          "src": "/images/projects/gis-mapping.webp",
+          "alt": "Screenshot of the GIS property mapping platform",
+          "width": 1268,
+          "height": 709
+        },
+        "tags": ["React", "Leaflet", "Odoo", "Tailwind"],
+        "summary": "An interactive map for visualizing and managing geolocated properties, with polygons and attribute-based filtering.",
+        "details": {
+          "overview": "A web GIS app that shows geolocated properties on a map, integrated with an Odoo backend for secure data sync, persistent storage, and role-based access control.",
+          "features": [
+            "Dynamic markers with detailed popups",
+            "Filtering by status, area, and custom tags",
+            "Draw, edit, and delete polygon boundaries on the map",
+            "Odoo backend for secure sync, storage, and role-based access"
+          ]
+        }
+      },
+      {
+        "slug": "obananapay",
+        "title": "ObananaPay",
+        "subtitle": "Mobile payment platform",
+        "categories": ["Mobile"],
+        "image": {
+          "src": "/images/projects/obananapay.webp",
+          "alt": "Screenshot of the ObananaPay mobile app",
+          "width": 558,
+          "height": 500
+        },
+        "tags": ["React Native", "Node.js", "MongoDB", "QR Codes"],
+        "summary": "End-to-end mobile payment app with QR code scanning, instant transfers, transaction history, and saved contacts.",
+        "details": {
+          "overview": "Built with React Native (Expo) and a Node.js/Express backend with MongoDB, covering the full payment journey from scanning a QR code to a receipt in your history.",
+          "features": [
+            "Secure payment flows",
+            "Real-time transaction updates",
+            "QR code generation and scanning",
+            "Contact management",
+            "Receipt generation",
+            "Transaction search with filtering"
+          ]
+        }
+      },
+      {
+        "slug": "calling-card",
+        "title": "Digital Calling Card Platform",
+        "subtitle": "QR business cards",
+        "categories": ["Web"],
+        "image": {
+          "src": "/images/projects/calling-card.webp",
+          "alt": "Screenshot of the Digital Calling Card platform",
+          "width": 1072,
+          "height": 553
+        },
+        "tags": ["Next.js", "MongoDB", "Tailwind"],
+        "summary": "QR-based digital business card system with customizable templates for personal branding.",
+        "description": "Users can share contacts via QR scan and create personalized cards with custom layouts and branding. Built with Next.js for a fast, seamless web experience. MongoDB stores user profiles, card designs, and template configurations. Design tools let users edit card templates, including colors, fonts, and layouts."
+      },
+      {
+        "slug": "qms",
+        "title": "Odoo QMS Module",
+        "subtitle": "Document control for Odoo",
+        "categories": ["ERP"],
+        "image": {
+          "src": "/images/projects/qms.webp",
+          "alt": "Screenshot of the Quality Management System module",
+          "width": 600,
+          "height": 300
+        },
+        "tags": ["Odoo", "Python", "PostgreSQL"],
+        "summary": "Custom Odoo module for document management with approval workflows and compliance reporting.",
+        "description": "Features version control, automatic numbering, and role-based access control. Supports inspections with dynamic checklists, approval routes, and detailed reporting aligned with internal audit and compliance requirements."
+      },
+      {
+        "slug": "ecommerce-app",
+        "title": "E-commerce Mobile App",
+        "subtitle": "Shopping app",
+        "categories": ["Mobile"],
+        "image": {
+          "src": "/images/projects/ecommerce-app.webp",
+          "alt": "Screenshot of the E-commerce mobile app",
+          "width": 472,
+          "height": 280
+        },
+        "tags": ["React Native", "Expo"],
+        "summary": "Full-featured shopping app with product browsing, search, cart management, and checkout flow.",
+        "description": "Built for a seamless mobile commerce experience with React Native and Expo. Includes a product catalog with categories, advanced search and filters, a shopping cart with quantity management, secure checkout, order tracking, and user profile management. Optimized for performance with image caching and lazy loading."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let’s work together",
+    "body": "I’m open to full stack, mobile, and Odoo ERP work. Email is the fastest way to reach me.",
+    "emailLabel": "Send an email",
+    "copyLabel": "Copy email address"
+  },
+  "footer": {
+    "text": "© 2026 Mark Anthony Hipe. Built with Next.js and Tailwind CSS."
+  }
+}
